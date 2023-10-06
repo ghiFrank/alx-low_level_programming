@@ -16,7 +16,7 @@ int main(void)
 		{
 			int y = 1 + j;
 
-			for (; y <=9; y++)
+			for (; y <= 9; y++)
 			{
 				putchar('0' + i);
 				putchar('0' + j);
@@ -26,7 +26,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			}	
+			}
 		}
 	}
 	putchar('\n');
