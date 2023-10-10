@@ -21,6 +21,6 @@ int main(void)
 		pc1 = pc2;
 		pc2 = pc3;
 	}
-	printf("%d\n", total);
+	printf("%ld\n", total);
 	return (0);
 }
