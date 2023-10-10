@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - main function
@@ -25,12 +26,17 @@ int main(void)
 	{
 		h1 = pc1_h1 + pc2_h1;
 		h2 = pc1_h2 + pc2_h2;
+		if (pc1_h2 + pc2_h2 > 9999999999)
+		{
+			h1 += 1;
+			h2 %= 10000000000;
+		}
 		printf("%ld%ld", h1, h2);
 		pc1_h1 = pc2_h1;
 		pc1_h2 = pc2_h2;
 		pc2_h1 = h1;
 		pc2_h2 = h2;
-		if (i < 98)
+		if (i != 98)
 			printf(", ");
 	}
 	printf("\n");
