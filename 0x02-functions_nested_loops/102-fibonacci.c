@@ -16,9 +16,11 @@ int main(void)
 	for (i = 3; i <= 50; i++)
 	{
 		pc3 = pc1 + pc2;
-		printf("%ld, ", pc3);
+		printf("%ld", pc3);
 		pc1 = pc2;
 		pc2 = pc3;
+		if ( i < 50)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
