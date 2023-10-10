@@ -1,8 +1,11 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - main function
+ *
+ *Return: returns 0
  */
-void main(void) 
+int main(void)
 {
 	int i;
 
@@ -12,5 +15,6 @@ void main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 			total = total + i;
 	}
-       	printf("%d",total);
+       	printf("%d\n",total);
+	return (0);
 }
