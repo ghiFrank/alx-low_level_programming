@@ -13,7 +13,7 @@ int main(void)
 	long pc3;
 	long total = 2;
 
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 32; i++)
 	{
 		pc3 = pc1 + pc2;
 		if (pc3 % 2 == 0)
