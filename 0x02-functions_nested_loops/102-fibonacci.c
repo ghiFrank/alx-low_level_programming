@@ -19,7 +19,7 @@ int main(void)
 		printf("%ld", pc3);
 		pc1 = pc2;
 		pc2 = pc3;
-		if ( i < 50)
+		if (i < 50)
 			printf(", ");
 	}
 	printf("\n");
