@@ -4,14 +4,6 @@
  * print_to_98 - prints from n to 98
  * @n: starting number
  */
-#include <stdlib.h>
-#include <unistd.h>
-
-int _putchar(char c)
-{
-		return (write(1, &c, 1));
-}
-
 void print_to_98(int n)
 {
 		if (n <= 98)
