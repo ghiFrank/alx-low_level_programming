@@ -1,41 +1,50 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ * numLength - returns the length of number
+ *@num: number
+ * Return: number of digits
+ */
+int numLength(int num)
+{
+	int length = 0;
+	if (!num)
+		return (1);
+	while (num)
+	{
+		num = num / 10;
+		length += 1;
+	}
+	return (length);
+}
+/**
  * main - main function
  *
  * Return: returns 0
  */
 int main(void)
 {
-	int i;
+	int i, ini;
 	long pc1 = 1, pc2 = 2, pc3;
-	long pc1_h1, pc1_h2, pc2_h1, pc2_h2;
-	long h1, h2;
+	long mx = 100000000, pc1h = 0, pc2h = 0, pc3h = 0;
 
-	printf("1, 2, ");
-	for (i = 3; i < 92; i++)
+	for (i = 1; i <= 98; i++)
 	{
-		pc3 = pc1 + pc2;
-		printf("%ld", pc3);
-		pc1 = pc2;
-		pc2 = pc3;
-		if (i < 98)
-			printf(", ");
-	}
-	for (i = 93; i < 99; i++)
-	{
-		h1 = pc1_h1 + pc2_h1;
-		h2 = pc1_h2 + pc2_h2;
-		if (pc1_h2 + pc2_h2 > 9999999999)
+		if (pc1h > 0)
+			printf("%lu", pc1h);
+		ini = numLength(mx) - 1 - numLength(pc1);
+		while (pc1h > 0 && ini > 0)
 		{
-			h1 += 1;
-			h2 %= 10000000000;
+			printf("%d", 0);
+			ini--;
 		}
-		printf("%ld%ld", h1, h2);
-		pc1_h1 = pc2_h1;
-		pc1_h2 = pc2_h2;
-		pc2_h1 = h1;
-		pc2_h2 = h2;
+		printf("%lu", pc1);
+		pc3 = (pc1 + pc2) % mx;
+		pc3h = pc1h + pc2h + (pc1 + pc2) / mx;
+		pc1 = pc2;
+		pc1h = pc2h;
+		pc2 = pc3;
+		pc2h = pc3h;
 		if (i != 98)
 			printf(", ");
 	}
