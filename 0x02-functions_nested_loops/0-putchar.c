@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 /**
  *main - main function
  *
  * Return: returns 0
  */
 int main(void)
-{
-	char c[] = "_putchar";
-
-	int n;
-
-	for (n = 0; c[n] != '\0'; n++)
-	{
-		_putchar(c[n]);
-	}
+{	
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
