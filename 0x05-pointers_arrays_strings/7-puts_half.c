@@ -1,21 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+
 /**
- * puts2 - prints every other string
+ * puts_half - prints half of a string
  * @str: string
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i = 0;
 	int len = strlen(str);
+	int i = len / 2;
 
 	for (; i < len; i++)
 	{
-		if (i % 2 == 0)
-		{
-			printf("%c", str[i]);
-		}
+		printf("%c", str[i]);
 	}
 	printf("\n");
 }
