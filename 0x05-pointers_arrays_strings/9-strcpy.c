@@ -3,7 +3,8 @@
 #include <string.h>
 
 /**
- * _strcpy - copies the string pointed to by src copies the string pointed to by src
+ * _strcpy - copies the string pointed to by src
+ * to the buffer pointed to by dest
  * @dest: buffer
  * @src: string
  * Return: returns string
