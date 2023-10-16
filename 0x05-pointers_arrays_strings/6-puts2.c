@@ -1,27 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-
 /**
- * puts_half - prints half of a string
+ * puts2 - reverses string
  * @str: string
  */
-void puts_half(char *str)
+void puts2(char *str)
 {
-    int len = strlen(str);
-    int i = len / 2;
+	int i = 0;
 
-    for (; i < len; i++)
-    {
-        if (strlen(str) % 2 != 0)
-        {
-            if (i + 1 < strlen(str))
-                printf("%c", str[i + 1]);
-            else
-                break;
-        }
-        else
-            printf("%c", str[i]);
-    }
-    printf("\n");
+	for (; i < strlen(str); i++)
+	{
+		if (i % 2 == 0)
+		{
+			printf("%c", str[i]);
+		}
+	}
+	printf("\n");
 }
