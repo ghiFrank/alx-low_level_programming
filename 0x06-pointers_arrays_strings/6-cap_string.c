@@ -35,7 +35,7 @@ char *cap_string(char *n)
 			sep = 1;
 		else if (sep)
 		{
-			*n = toupper(*n);
+			*n -= 32;
 			sep = 0;
 		}
 		else
