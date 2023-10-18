@@ -16,7 +16,7 @@ char *cap_string(char *n)
 	{
 		int j = 0;
 
-		for (; j < 10; j++)
+		for (; j < 13; j++)
 		{
 			if (n[i] == arr[j])
 				n[i + 1] = toupper(n[i + 1]);
