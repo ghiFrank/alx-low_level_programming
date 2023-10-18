@@ -11,10 +11,12 @@ char *cap_string(char *n)
 {
 	int i = 0;
 	char arr[10] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+
 	for (; n[i] != '\0'; i++)
 	{
 		int j = 0;
-		if (isspace(n[i]) || n[i] == '\n')
+
+		if (isspace(n[i]) || n[i] == '\n' || n[i] == '\t')
 			n[i + 1] = toupper(n[i + 1]);
 		for (; j < 10; j++)
 		{
