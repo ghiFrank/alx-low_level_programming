@@ -2,6 +2,7 @@
 /**
  * is_prime_number - checks if n is a prime number
  * @n: number
+ * @sqr: square root
  * Return: returns 1 if prime number and 0 if not
  */
 int square(int n, int sqr);
