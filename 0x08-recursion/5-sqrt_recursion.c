@@ -4,7 +4,7 @@
  * @n: number
  * Return: natural square root of a n.
  */
-int square(int n, int val);
+int square(int n, int y);
 int _sqrt_recursion(int n)
 {
 	return (square(n, 1));
