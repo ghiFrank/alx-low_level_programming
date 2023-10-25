@@ -2,8 +2,6 @@
 /**
  * is_prime_number - checks if n is a prime number
  * @n: number
- * @y: number
- * @sqr: square root
  * Return: returns 1 if prime number and 0 if not
  */
 int square(int n, int sqr);
@@ -21,7 +19,6 @@ int is_prime_number(int n)
  * divi - checks if y divides n evenly
  * @n: number
  * @y: number
- * @sqr: square root
  * Return: 0 if yes and 1 if no.
  */
 int divi(int n, int y)
