@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - prints multiplication of 2 numbers
  * @argc: total arguments
