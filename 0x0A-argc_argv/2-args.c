@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int n = 1;
+	int n = 0;
 
 	for (; n < argc; n++)
 	{
