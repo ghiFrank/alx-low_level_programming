@@ -1,1 +1,1 @@
-libmy.a: static library
+readme
