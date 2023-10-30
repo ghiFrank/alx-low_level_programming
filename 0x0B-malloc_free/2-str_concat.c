@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _strdup - concatenates two strings
+ * _str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
  * Return: returns a pointer
