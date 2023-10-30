@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	int n;
 	int sizo;
 
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 	sizo = strlen(str);
 	arr = malloc(sizeof(char) * sizo);
