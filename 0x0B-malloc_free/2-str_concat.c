@@ -13,22 +13,27 @@ char *str_concat(char *s1, char *s2)
 	char *arr;
 	int sizo;
 	int n;
+	int si1;
+	int si2;
 
 	if (s1 == NULL)
-		sizo = strlen(s2);
-	else if (s2 == NULL)
-		sizo = strlen(s1);
+		si1 = 0;
 	else
-		sizo = strlen(s1) + strlen(s2);
+		si1 = strlen(s1);
+	if (s2 == NULL)
+		si2 = 0;
+	else
+		si2 = strlen(s2);
+	sizo = si1 + si2;
 	arr = malloc(sizeof(char) * (sizo + 1));
 	if (arr == NULL)
 		return (NULL);
 	for (n = 0; n < sizo; n++)
 	{
-		if (n < strlen(s1))
+		if (n < si1)
 			arr[n] = s1[n];
 		else
-			arr[n] = s2[n - strlen(s1)];
+			arr[n] = s2[n - si1];
 	}
 	arr[n] = '\0';
 	return (arr);
