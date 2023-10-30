@@ -10,8 +10,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	int sizo;
-	int n;
+	unsigned int n;
 
 	if (size < 2)
 		return (NULL);
