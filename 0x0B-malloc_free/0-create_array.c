@@ -22,5 +22,4 @@ char *create_array(unsigned int size, char c)
 		arr[n] = c;
 	}
 	return (arr);
-	free(a
 }
