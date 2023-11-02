@@ -9,7 +9,7 @@
  * @m: max bytes
  * Return: pointer
  */
-char memfill(char *c, char b, unsigned int m)
+char *memfill(char *c, char b, unsigned int m)
 {
 	char *arr2 = c;
 	
