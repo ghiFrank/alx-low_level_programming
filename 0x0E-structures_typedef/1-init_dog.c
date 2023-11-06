@@ -1,4 +1,3 @@
-#include "main.h"
 #ifndef DOG_H
 #define DOG_H
 /**
@@ -13,7 +12,6 @@ struct dog
 	float age;
 	char *owner;
 };
-#endif /* DOG_H */
 /**
  * init_dog - initialize a var of type struct dof
  * @d: struct
@@ -27,3 +25,4 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	d->age = age;
 	d->owner = owner;
 }
+#endif /* DOG_H */
