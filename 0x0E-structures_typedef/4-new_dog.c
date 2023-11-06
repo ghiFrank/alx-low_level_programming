@@ -9,8 +9,11 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *doggo;
-	doggo = malloc(sizeof(struct dog));
+	dog_t *doggo;
+
+	if (!name || age < 0 || !owner)
+		return (NULL);
+	doggo = (dog_t *)malloc(sizeof(dog_t));
 	if (doggo == NULL)
 		return (NULL);
 	doggo->name = name;
