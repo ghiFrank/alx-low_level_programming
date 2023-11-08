@@ -7,11 +7,14 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int n = 0;
-	int sizo = size;
-
-	for (; n < sizo; n++)
+	if ( arrray && size > 0 && action)
 	{
-		action(array[n]);
+		int n = 0;
+		int sizo = size;
+
+		for (; n < sizo; n++)
+		{
+			action(array[n]);
+		}
 	}
 }
