@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 	n = atoi(argv[1]);
 	if (n < 0)
 		printf("Error\n");
-		exit(1);
+		exit(2);
 	while (n--)
 		printf("%02hhx%s", *ptr++, n ? " " : "\n");
 	return (0);
