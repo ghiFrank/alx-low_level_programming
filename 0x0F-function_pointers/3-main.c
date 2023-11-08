@@ -1,6 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 /** main - main function
  * @argc: total args
  * @argv: array of args
@@ -8,24 +7,26 @@
  */
 int main(int argc, char * argv[])
 {
+	int (*op_func)(int, int), a, b;
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
-	if (get_op_func(argv[2]) == NULL)
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	op_func = get_op_func(argv[2]);
+	if (op_func == NULL)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
-	if ((argv[2] == "/" || argv[2] == "%") && atoi(argv[3]) == 0)
+	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
-	int num = (get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
-	
-	printf("%d", num);
+	printf("%d\n", op_func(a,b));
 	return (0);
 }
