@@ -1,11 +1,11 @@
 #include "3-calc.h"
-#include <string.h>
-/** main - main function
+/**
+ * main - main function
  * @argc: total args
  * @argv: array of args
  * Return: returns 0
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int (*op_func)(int, int), a, b;
 
@@ -27,6 +27,6 @@ int main(int argc, char * argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	printf("%d\n", op_func(a,b));
+	printf("%d\n", op_func(a, b));
 	return (0);
 }
