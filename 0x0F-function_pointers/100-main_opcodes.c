@@ -4,7 +4,7 @@
  * main - main function
  * @argc: total args
  * @argv: array of args
- * Return : returns 0
+ * Return: returns 0
  */
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	n = atoi(argv[1]);
-	if (n <0)
+	if (n < 0)
 		printf("Error\n");
 		exit(1);
 	while (n--)
