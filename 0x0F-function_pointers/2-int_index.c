@@ -1,6 +1,6 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
- * array_iterator - iterates array
+ * int_index - iterates array
  * @array: array of integers
  * @size: size of array
  * @cmp: pointer to function
@@ -8,14 +8,16 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int n = 0;
-
-	if (size <= 0)
-		return (-1);
-	for (; n < size; n++)
+	if ( array && size < 0 && cmp)
 	{
-		if (cmp(array[n]))
-			return (n);
-	}
-	return (-1);
+		int n = 0;
+
+		if (size <= 0)
+			return (-1);
+		for (; n < size; n++)
+		{
+			if (cmp(array[n]))
+				return (n);
+		}
+		return (-1);
 }
