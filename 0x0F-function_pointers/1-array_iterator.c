@@ -7,7 +7,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if ( arrray && size > 0 && action)
+	if ( array && size > 0 && action)
 	{
 		int n = 0;
 		int sizo = size;
