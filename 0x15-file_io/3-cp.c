@@ -2,7 +2,8 @@
 #define USAGE "Usage: cp file_from file_to\n"
 #define ERR_NOREAD "Error: can't read from file %s\n"
 #define ERR_NOWRITE "Error: can't write to %s\n"
-#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IRWGRP | S_IROTH)
+#define ERR_NOCLOSE "Error: Can't close fd %d\n"
+#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 /**
  * main - program
  * @ac: argument count
