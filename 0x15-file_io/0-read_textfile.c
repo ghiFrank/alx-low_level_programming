@@ -5,7 +5,7 @@
  * @letters: number of bytes
  * Return: number bytes
  */
-ssize_t readtextfile(const char *fimename, size_t letters)
+ssize_t readtextfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t bytes;
