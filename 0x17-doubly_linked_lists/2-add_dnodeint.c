@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint - adds new head node to dlist
- * @h: address of pointer to current head node
+ * @head: address of pointer to current head node
  * @n: int field of new node
  * Return: address of new node or NULL
 */
