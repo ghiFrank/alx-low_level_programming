@@ -15,7 +15,7 @@ int mul(int a, int b){
 int div(int a, int b){
 	if (b == 0)
 	{
-		printf("Error: Division by zero\n")
+		printf("Error: Division by zero\n");
 		return 0;
 	}
 	return a / b;
@@ -24,7 +24,7 @@ int div(int a, int b){
 int mod(int a, int b){
 	if (b == 0)
 	{
-		printf("Error: Division by zero\n")
+		printf("Error: Division by zero\n");
 		return 0;
 	}
 	return a % b;
