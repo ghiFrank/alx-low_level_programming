@@ -36,7 +36,6 @@ hash_node_t *make_hash_node(const char *key, const char *value)
  * @ht: hash table to add the element to
  * @key: data key
  * @value: data to store
- * 
  * Return: 1 on success, else 0
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
