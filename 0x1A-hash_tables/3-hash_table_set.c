@@ -13,8 +13,8 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
-			return NULL;
-	node->key = stdrup(key);
+			return (NULL);
+	node->key = strdup(key);
 	if (node->key == NULL)
 	{
 		free(node);
@@ -28,7 +28,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 		return (NULL);
 	}
 	node->next = NULL;
-	return (node)
+	return (node);
 }
 
 /**
