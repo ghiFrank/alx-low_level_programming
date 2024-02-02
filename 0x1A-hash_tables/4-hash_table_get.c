@@ -4,7 +4,7 @@
  * hash_table_get - gets a key's value
  * @ht: table
  * @key: key to find value
- * 
+ *
  * Return: the key's value or null if can't be found
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
