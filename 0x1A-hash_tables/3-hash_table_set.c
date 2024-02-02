@@ -4,24 +4,24 @@
  * make_hash_node - creates a new hash node
  * @key: node key
  * @value: node value
- * 
+ *
  * Return: new node or null when failure
 */
 hash_node_t *make_hash_node(const char *key, const char *value)
 {
 	hash_node_t *node;
 
-	node = malloc(sizeof(hash_table_t));
+	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 			return NULL;
-	node_key->stdrup(key);
-	if (node->key-> == NULL)
+	node->key = stdrup(key);
+	if (node->key == NULL)
 	{
 		free(node);
 		return (NULL);
 	}
 	node->value = strdup(value);
-	if (node->value-> == NULL)
+	if (node->value == NULL)
 	{
 		free(node->key);
 		free(node);
@@ -41,7 +41,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int  index;
+	unsigned long int index;
 	hash_node_t *hash_node, *tmp;
 	char *new_value;
 
@@ -66,7 +66,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node = make_hash_node(key, value);
 	if (hash_node == NULL)
 			return (0);
-	hash_node->next = hy->array[index];
+	hash_node->next = ht->array[index];
 	ht->array[index] = hash_node;
 	return (1);
 }
